@@ -8,14 +8,16 @@ public class TugasPerulangan {
         System.out.println("Saldo Tabungan : " + "Rp." + saldotabungan + "jt");
         System.out.println("Syarat Memenangkan Undian : " + "Rp." + syaratsaldoundian + "jt");
 
-        do {
-            saldotabungan++;
-            System.out.println("Tingkatkan Saldo Tabungan Anda!");
-            System.out.println("Saldo Tabungan : " + "Rp." + saldotabungan + "jt");
-        }while(saldotabungan != syaratsaldoundian);
+        while (saldotabungan != syaratsaldoundian){
 
-        System.out.println("Saldo Tabungan Anda Telah Mencapai " + "Rp." + syaratsaldoundian + "jt");
+              saldotabungan++;
+              System.out.println("Tingkatkan Saldo Tabungan Anda!");
+              System.out.println("Saldo Tabungan : " + "Rp." + saldotabungan + "jt");
+        }
+
+        System.out.println("Saldo Tabungan Anda Telah Mencapai " + "Rp." + saldotabungan + "jt");
         System.out.println("Anda Mendapatkan Hadiah Undian Mobil !!!");
+
 
     }
 }
